@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit Produksi TRI Beli | Layanan UP TIKI & Auto TKJ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #1a0b1f;
+      color: #fce7f3;
+      scroll-behavior: smooth;
+    }
+    .neon-text {
+      color: #f9a8d4;
+      text-shadow: 0 0 12px #f472b6, 0 0 24px #db2777;
+    }
+    .glow-card {
+      background: rgba(180, 30, 150, 0.15);
+      border: 1px solid rgba(244, 114, 182, 0.3);
+      box-shadow: 0 0 20px rgba(244, 114, 182, 0.25);
+      backdrop-filter: blur(6px);
+    }
+    .hero-bg {
+      background: linear-gradient(135deg, #831843, #3b0764, #701a75, #4c1d95);
+      background-size: 400% 400%;
+      animation: gradientShift 8s ease infinite;
+    }
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .glow-border:hover {
+      box-shadow: 0 0 15px #f9a8d4, 0 0 25px #db2777;
+      transform: scale(1.02);
+      transition: all 0.3s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full bg-pink-950 bg-opacity-70 backdrop-blur-md shadow-lg z-50">
+    <div class="container mx-auto flex justify-between items-center px-6 py-4">
+      <h1 class="text-2xl font-bold neon-text">TRI Beli</h1>
+      <ul class="flex space-x-6 text-sm">
+        <li><a href="#layanan" class="hover:text-pink-300">Layanan</a></li>
+        <li><a href="#pricefit" class="hover:text-pink-300">PriceFit</a></li>
+        <li><a href="#profil" class="hover:text-pink-300">Profil</a></li>
+        <li><a href="#project" class="hover:text-pink-300">Project</a></li>
+        <li><a href="#kontak" class="hover:text-pink-300">Kontak</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-bg h-screen flex flex-col justify-center items-center text-center px-4">
+    <h2 class="text-5xl md:text-6xl font-bold neon-text mb-6">Unit Produksi TRI Beli</h2>
+    <p class="text-lg text-pink-100 max-w-2xl mb-8">
+      Layanan Digital, Otomasi, dan Teknologi Informasi oleh siswa jurusan TKJ.  
+      Kami menciptakan solusi teknologi kreatif dengan sentuhan fantasi penuh warna.
+    </p>
+    <a href="#layanan" class="bg-pink-600 hover:bg-pink-500 px-8 py-3 rounded-full text-white font-semibold glow-border">Lihat Layanan Kami</a>
+  </section>
+
+  <!-- Layanan -->
+  <section id="layanan" class="py-20 container mx-auto px-6 text-center">
+    <h3 class="text-3xl font-bold neon-text mb-12">Layanan UP TIKI & Auto TKJ</h3>
+    <div class="grid md:grid-cols-3 gap-10">
+      <div class="p-6 rounded-xl glow-card glow-border">
+        <h4 class="text-xl font-semibold text-pink-300 mb-3">Servis Komputer</h4>
+        <p>Perbaikan, instalasi sistem operasi, dan peningkatan performa perangkat IT sekolah.</p>
+      </div>
+      <div class="p-6 rounded-xl glow-card glow-border">
+        <h4 class="text-xl font-semibold text-pink-300 mb-3">Auto Layanan TKJ</h4>
+        <p>Pembuatan aplikasi sederhana berbasis HTML dan layanan digital sekolah.</p>
+      </div>
+      <div class="p-6 rounded-xl glow-card glow-border">
+        <h4 class="text-xl font-semibold text-pink-300 mb-3">Pelatihan & Konsultasi</h4>
+        <p>Membimbing siswa dan guru dalam penguasaan teknologi jaringan dan desain web dasar.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PriceFit -->
+  <section id="pricefit" class="py-20 bg-pink-950 bg-opacity-50">
+    <h3 class="text-3xl font-bold text-center neon-text mb-12">Paket Harga - PriceFit</h3>
+    <div class="flex flex-wrap justify-center gap-10">
+      <div class="glow-card glow-border w-72 p-6 rounded-xl text-center">
+        <h4 class="text-lg font-bold text-pink-300 mb-2">Basic</h4>
+        <p class="mb-3">Instalasi software & servis ringan.</p>
+        <p class="text-3xl font-extrabold text-pink-400 mb-4">Rp 100.000</p>
+        <button class="bg-pink-600 hover:bg-pink-500 px-5 py-2 rounded-full text-white">Pilih Paket</button>
+      </div>
+      <div class="glow-card glow-border w-72 p-6 rounded-xl text-center border-2 border-pink-400">
+        <h4 class="text-lg font-bold text-pink-300 mb-2">Pro</h4>
+        <p class="mb-3">Perawatan jaringan, backup data, & proteksi sistem.</p>
+        <p class="text-3xl font-extrabold text-pink-400 mb-4">Rp 250.000</p>
+        <button class="bg-pink-600 hover:bg-pink-500 px-5 py-2 rounded-full text-white">Pilih Paket</button>
+      </div>
+      <div class="glow-card glow-border w-72 p-6 rounded-xl text-center">
+        <h4 class="text-lg font-bold text-pink-300 mb-2">Premium</h4>
+        <p class="mb-3">Full service + pembuatan project HTML interaktif.</p>
+        <p class="text-3xl font-extrabold text-pink-400 mb-4">Rp 500.000</p>
+        <button class="bg-pink-600 hover:bg-pink-500 px-5 py-2 rounded-full text-white">Pilih Paket</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Profil -->
+  <section id="profil" class="py-20 container mx-auto px-6 text-center">
+    <h3 class="text-3xl font-bold neon-text mb-8">Profil Unit Produksi TRI Beli</h3>
+    <p class="max-w-3xl mx-auto text-pink-100 leading-relaxed">
+      Unit Produksi TRI Beli adalah wadah kreatif siswa jurusan TKJ untuk mengembangkan kemampuan di bidang TIK,  
+      jaringan, dan pembuatan website berbasis HTML. Kami berkomitmen menghadirkan karya berkualitas  
+      dengan semangat kolaborasi dan inovasi berbasis teknologi masa depan.
+    </p>
+  </section>
+
+  <!-- Project -->
+  <section id="project" class="py-20 bg-pink-950 bg-opacity-40">
+    <h3 class="text-3xl font-bold text-center neon-text mb-12">Project Terbaru Kami</h3>
+    <div class="grid md:grid-cols-3 gap-10 container mx-auto px-6">
+      <div class="glow-card glow-border p-4 rounded-xl text-center">
+        <img src="okk.jpg" alt="Project HTML Interaktif" class="rounded-lg mb-4">
+        <h4 class="font-semibold text-pink-300 mb-2">HTML Interaktif Edukasi</h4>
+        <p>Membuat halaman pembelajaran interaktif menggunakan HTML & CSS untuk media edukasi sekolah.</p>
+      </div>
+      <div class="glow-card glow-border p-4 rounded-xl text-center">
+        <img src="yy.jpg" alt="Project HTML Galeri" class="rounded-lg mb-4">
+        <h4 class="font-semibold text-pink-300 mb-2">Galeri Digital Sekolah</h4>
+        <p>Pembuatan galeri foto digital berbasis HTML untuk menampilkan kegiatan siswa dan event sekolah.</p>
+      </div>
+      <div class="glow-card glow-border p-4 rounded-xl text-center">
+        <img src="yh.png" alt="Project HTML Form" class="rounded-lg mb-4">
+        <h4 class="font-semibold text-pink-300 mb-2">Formulir Online HTML</h4>
+        <p>Membuat form pendaftaran online sekolah dengan validasi sederhana berbasis HTML dan CSS.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section id="kontak" class="py-20 text-center container mx-auto px-6">
+    <h3 class="text-3xl font-bold neon-text mb-8">Hubungi Kami</h3>
+    <p class="text-pink-100 mb-6">Ingin bekerja sama atau menggunakan layanan kami? Kirim pesan melalui formulir di bawah ini:</p>
+    <form class="max-w-xl mx-auto space-y-4">
+      <input type="text" placeholder="Nama Anda" class="w-full p-3 rounded-lg bg-pink-950 border border-pink-400 text-white">
+      <input type="email" placeholder="Email Anda" class="w-full p-3 rounded-lg bg-pink-950 border border-pink-400 text-white">
+      <textarea placeholder="Pesan Anda" rows="4" class="w-full p-3 rounded-lg bg-pink-950 border border-pink-400 text-white"></textarea>
+      <button type="submit" class="bg-pink-600 hover:bg-pink-500 px-8 py-3 rounded-full text-white font-semibold glow-border">Kirim Pesan</button>
+    </form>
+    <p class="mt-6 text-pink-300 text-sm">
+      Email: <b>uptrbeli@school.id</b> | Telepon: <b>+62 812-3456-7890</b>
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-pink-950 text-pink-200 text-center py-6 border-t border-pink-600">
+    <p>&copy; 2025 Unit Produksi TRI Beli — All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
